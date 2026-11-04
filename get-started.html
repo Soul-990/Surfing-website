@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Surfing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <a class="logo" href="index.html"><img src="pictures/imgi_2_logo-surfx1.png" alt="Surf home"></a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="iconmenu" aria-label="Toggle menu"> &#9776;</label>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-sub"><a href="gallery.html">Pages <i class="fa-solid fa-angle-down"
+                            style="font-size:11px"></i></a>
+                    <ul class="sub">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="partner.html">Partner with us</a></li>
+                    </ul>
+                </li>
+                <li><a href="tour-list.html">Tour list</a></li>
+                <li><a href="tour-search.html">Tour Search</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="btn-nav" href="get-started.html">Get Started</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="page-hero">
+        <p class="crumbs"><a href="index.html">Home</a> / Get Started</p>
+        <h1>Get Started</h1>
+        <p>Your surf adventure begins here.</p>
+    </section>
+
+    <section class="wrap narrow">
+        <h2 class="title">Tell us about your dream trip</h2>
+        <p class="sub-title">Fill in a few details and a travel concierge will send you a tailored plan.</p>
+        <form data-ok="Thank you! A travel concierge will email you a tailored plan within 24 hours.">
+            <label>Full name<input required name="name"></label>
+            <label>Email<input required type="email" name="email"></label>
+            <label>I am interested in<select name="type">
+                    <option>Surf Day</option>
+                    <option>Surf &amp; Stay</option>
+                    <option>Surf Trips</option>
+                    <option>Surf Guide</option>
+                    <option>Not sure yet</option>
+                </select></label>
+            <label>My surfing level<select name="level">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select></label>
+            <label>Approximate budget (USD)<input type="number" min="0" step="50" name="budget"
+                    placeholder="e.g. 1000"></label>
+            <label>Anything else we should know?<textarea rows="4" name="notes"></textarea></label>
+            <button class="btn" type="submit">Get my plan</button>
+        </form>
+        <p class="form-ok" hidden></p>
+    </section>
+    <div class="footbar">
+        <div class="tour">
+            <h2>Travel tour</h2>
+            <div class="text">
+                <p>12 Main tPt. London</p>
+                <p>+44 3656 4567</p>
+                <a href="mailto:contecttraval@gmail.com">contecttraval@gmail.com</a><br>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: #fafcff;"></i></a><a
+                    href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram"
+                        style="color: #fafafa;"></i></a><a href="#" aria-label="Twitter"><i
+                        class="fa-brands fa-square-twitter" style="color: #c7cfdb;"></i></a><a href="#"
+                    aria-label="TikTok"><i class="fa-brands fa-tiktok" style="color: #d7e0ee;"></i></a>
+            </div>
+        </div>
+        <div class="about">
+            <h2>About us</h2>
+            <div class="text">
+                <a href="blog.html">Travel and blog</a><br>
+                <a href="partner.html">Working with us</a><br>
+                <a href="partner.html#partner">Be our partner</a><br>
+                <a href="packages.html">Packages</a>
+            </div>
+        </div>
+        <div class="support">
+            <h2>Support</h2>
+            <div class="text">
+                <a href="support.html">Customer Support</a><br>
+                <a href="privacy.html">Privacy policy</a><br>
+                <a href="contact.html">Contact Channels</a>
+            </div>
+        </div>
+        <div class="payus">
+            <h2>Pay Safely with us</h2>
+            <div class="text">
+                <p>The payment is encrypted and transmitted securely with an SSL protocol.</p>
+                <img src="pictures/imgi_34_creditcard-logo.png" alt="Accepted credit cards">
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
